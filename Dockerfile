@@ -3,7 +3,10 @@ FROM node:latest
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install --force
+
+RUN export NODE_OPTIONS=--max-old-space-size=400
+
+RUN npm install
 
 COPY ./ .
 RUN npm run build
