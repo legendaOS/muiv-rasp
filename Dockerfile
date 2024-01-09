@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN export NODE_OPTIONS=--max-old-space-size=400
-
 RUN npm install
 
 COPY ./ .
