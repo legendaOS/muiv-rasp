@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Inter;
+    src: url("~/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+* {
+    font-family: Inter;
+}
+
+.page-wrapper {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    background: #FFF;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .page-wrapper {
+        width: 100%;
+    }
+}
