@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN npm cache clean --force
 
+RUN node --max-old-space-size=256 $(which npm) install
+
 RUN npm install
 
 COPY ./ .
